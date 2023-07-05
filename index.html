@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="container-lg">
+    <header>
+        <!-- Navbar section -->
+        <!-- bg-body-tertiary -->
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary " style="background-color: #DC780B;">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="http://localhost/preperformaJobTask/">
+                <img class="" src="./img/logo.png" alt="Logo" width="60" height="60">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="http://localhost/preperformaJobTask/">Home</a>
+              <a class="nav-link" href="#featured">Featured</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#utube">Videos</a>
+              <a class="nav-link" href="#faq">Faq</a>
+              <a class="nav-link" href="#">Contact</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar ends here -->
+    
+     <!-- Background image -->
+    
+     <div class="d-flex flex-column justify-content-end align-items-start bg-image bg-image-sm" style="background-image: url('./img/header2.jpg'); height: 600px;">
+        <div class="p-5">
+          <div class="text-black">
+            <h1 class="mb-3">Welcome!</h1>
+            <h4 class="mb-3">For Latest Recipes Please Subcribe</h4>
+          </div>
+          <!-- ... -->
+<form id="myForm" action="submit-form.php" method="post">
+  <div class="row mb-3">
+    <div class="col-sm-6">
+      <input type="text" name="name" class="form-control" placeholder="Name" required>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Country Code</span>
+        </div>
+        <input type="tel" name="countryCode" class="form-control" placeholder="+1" pattern="^\+\d+$" required>
+        <input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" pattern="\d{10}" required>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col">
+      <input type="email" name="email" class="form-control" placeholder="Email" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="submit" class="btn btn-outline-light btn-lg" style="background-color: #DC780B;">Submit</button>
+    </div>
+  </div>
+</form>
+<!-- ... -->
+
+        </div>
+      </div>
+      
+      
+<!-- Background image -->
+    </header>
+    <!-- main -->
+<main>
+<!-- Featured Recipes of this Month  -->
+<section id="featured" class="text-start text-md-center mt-5">
+    <h1>Fetured Recipes of This Month</h1>
+    <p class="text-danger">Best Recipes collection</p>
+    <hr class="w-25 mx-auto border-danger">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-5 mt-3 px5">
+        <div class="col">
+            <img class="w-100" src="./img/bild1.jpg" alt="">
+        </div>
+        <div class="col">
+            <img class="w-75" src="./img/bild2.png" alt="">
+        </div>
+        <div class="col">
+            <img class="w-100" src="./img/bild3.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- featured section ends here -->
+<!-- ================= -->
+<!-- About Section -->
+<section id="about" class="mt-5 py-5 px-5  rounded">
+    <h1 class="text-center my-5 ">About <span class="text-danger">Us</span></h1>
+    <div class="row row-cols-1 row-cols-md-2 mt-5 g-4">
+      
+      <div class="col ">
+        <h1>The K-Food Blog!</h1>
+        <p>The K-food blog was founded by Mr. K. Our main goal is to find delicious foods and know about their recipes and for out customer we will share those recipes into our blog. To get the updated blogs customer should signup with out newsletter. </p>
+  
+      </div>
+      <div class="col text-center">
+        <img class="w-50" src="./img/aboutImg.jpg" alt="">
+      </div>
+  
+    </div>
+  </section>
+<!-- Youtube Video Section -->
+
+<section id="utube" class="">
+    <h1 class="text-center my-5 ">See Our Demo Youtube <span class="text-danger">Recipes</span></h1>
+    <h4 class="text-center">Below is a demo video of our recipe video.</h4>
+    <iframe width=100% height="700px" src="https://www.youtube.com/embed/ROIZoGM-y2o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</section>
+
+<!-- Frequently Asked Question section -->
+
+<section id="faq" class="mt-5 py-5 px-5  rounded">
+    <h1 class="text-center my-5 ">Frequently <span class="text-danger">Asked Question</span></h1>
+    <div class="row row-cols-1 row-cols-md-2 mt-5 g-4">
+      <div class="col text-center">
+        <img class="w-50" src="./img/FAQ.png" alt="">
+      </div>
+      <div class="col ">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Is This food recipes are real?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Are the Ingrediants Showed In the recipes Available in Germany?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Where is the best place to buy Raw Ingrediants in Germany?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="bg-light text-center text-lg-start ">
+        <div >
+          <nav class="navbar navbar-expand-lg bg-body-tertiary " style="background-color: #DC780B;">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="#">
+                    <img class="" src="./img/logo.png" alt="Logo" width="60" height="60">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="#nav">Home</a>
+                  <a class="nav-link" href="#featured">Featured</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#utube">Videos</a>
+                  <a class="nav-link" href="#faq">Faq</a>
+                  <a class="nav-link" href="#">Contact</a>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+           
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="https://www.linkedin.com/in/sadman-sakib-3b86a6117/">K-Food Blog</a>
+        </div>
+        <!-- Copyright -->
+      
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
