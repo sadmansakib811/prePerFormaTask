@@ -8,13 +8,16 @@
     <style>
       .popup-banner {
           position: fixed;
-          bottom: 10px;
-          right: 10px;
-          background-color: #f1f1f1;
-          padding: 10px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
+          bottom: 20px;
+          right: 40px;
+          background-color: #f9f9f9;
+          padding: 20px;
+          border: 1px solid #ddd;
           display: none;
+      }
+
+      .close-btn {
+          cursor: pointer;
       }
   </style>
   </head>
@@ -298,11 +301,8 @@
       
 </footer>
 <div class="popup-banner" style="background-image: url('https://media.tenor.com/WBTSgPd7wQYAAAAC/tacos-taco-day.gif'); height: 300px; width: 300px;" id="popupBanner">
-
-  Call NOW: +49187654654
-
+  <a href="tel:+49187654654">Call NOW: +49187654654</a>
   <span class="close-btn btn-lg" style="color: red; font-size: 50px;">&times;</span>
-
 </div>
 
 <script>
