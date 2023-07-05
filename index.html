@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
+    <style>
+      .popup-banner {
+          position: fixed;
+          bottom: 10px;
+          right: 10px;
+          background-color: #f1f1f1;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          display: none;
+      }
+  </style>
+  </head>
 <body class="container-lg">
     <header>
         <!-- Navbar section -->
@@ -22,10 +34,11 @@
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="http://localhost/preperformaJobTask/">Home</a>
               <a class="nav-link" href="#featured">Featured</a>
+              <a class="nav-link" href="#blog">Blogs</a>
               <a class="nav-link" href="#about">About</a>
               <a class="nav-link" href="#utube">Videos</a>
               <a class="nav-link" href="#faq">Faq</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
               
             </div>
           </div>
@@ -82,8 +95,8 @@
 <main>
 <!-- Featured Recipes of this Month  -->
 <section id="featured" class="text-start text-md-center mt-5">
-    <h1>Fetured Recipes of This Month</h1>
-    <p class="text-danger">Best Recipes collection</p>
+    <h1>Fetured Recipes of <span style="color: #DC780B;"> This Month</span></h1>
+    <p>Best Recipes collection</p>
     <hr class="w-25 mx-auto border-danger">
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-5 mt-3 px5">
         <div class="col">
@@ -98,10 +111,48 @@
     </div>
 </section>
 <!-- featured section ends here -->
+<!-- Blog Post -->
+<section id="blog">
+  <h1 class="text-center my-5 ">Blog <span style="color: #DC780B;">Post</span></h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=556,505" style=" height: 500px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Biriyani Recipe</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://assets.epicurious.com/photos/5d49f1ebafded6000885a1c2/1:1/w_2240,c_limit/TomatoToasts_RECIPE_073119_056.jpg" style="height: 500px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tehari Recipe</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://www.seriouseats.com/thmb/HCnqq0O2npAXUoH7_1FdgtZQl0M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pan-roasted-chicken-vegetables-dijon-jus-recipe-hero-02_1-c3e427250efe40259dc8fab9ff66ea74.JPG" style="height: 500px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="text-center">
+    <button  class="btn btn-outline-light btn-lg mt-3 text-center" style="background-color: #DC780B;">More</button>
+
+  </div>
+</section>
 <!-- ================= -->
 <!-- About Section -->
 <section id="about" class="mt-5 py-5 px-5  rounded">
-    <h1 class="text-center my-5 ">About <span class="text-danger">Us</span></h1>
+    <h1 class="text-center my-5 ">About <span style="color: #DC780B;">Us</span></h1>
     <div class="row row-cols-1 row-cols-md-2 mt-5 g-4">
       
       <div class="col ">
@@ -118,7 +169,7 @@
 <!-- Youtube Video Section -->
 
 <section id="utube" class="">
-    <h1 class="text-center my-5 ">See Our Demo Youtube <span class="text-danger">Recipes</span></h1>
+    <h1 class="text-center my-5 ">See Our Demo <span style="color: #DC780B;"  >Youtube Recipes</span></h1>
     <h4 class="text-center">Below is a demo video of our recipe video.</h4>
     <iframe width=100% height="700px" src="https://www.youtube.com/embed/ROIZoGM-y2o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -127,7 +178,7 @@
 <!-- Frequently Asked Question section -->
 
 <section id="faq" class="mt-5 py-5 px-5  rounded">
-    <h1 class="text-center my-5 ">Frequently <span class="text-danger">Asked Question</span></h1>
+    <h1 class="text-center my-5 ">Frequently <span style="color: #DC780B;">Asked Question</span></h1>
     <div class="row row-cols-1 row-cols-md-2 mt-5 g-4">
       <div class="col text-center">
         <img class="w-50" src="./img/FAQ.png" alt="">
@@ -176,6 +227,36 @@
   
     </div>
   </section>
+  <!-- Contact Section -->
+
+  <section id="contact" class=" py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-4">Contact Us</h2>
+          <p class="text-muted">Feel free to get in touch with us.</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 text-center">
+          <i class="bi bi-geo-alt h1 text-primary"></i>
+          <h5 class="mt-3">Address</h5>
+          <p class="text-muted">123 Main Street, Cologne, Germany</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="bi bi-envelope h1 text-primary"></i>
+          <h5 class="mt-3">Email</h5>
+          <p class="text-muted"><a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="bi bi-phone h1 text-primary"></i>
+          <h5 class="mt-3">Phone</h5>
+          <p class="text-muted">+49 234 567 890</p>
+        </div>
+      </div>
+     
+    </div>
+  </section>
 
 </main>
 
@@ -185,7 +266,9 @@
           <nav class="navbar navbar-expand-lg bg-body-tertiary " style="background-color: #DC780B;">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="#">
+                  
                     <img class="" src="./img/logo.png" alt="Logo" width="60" height="60">
+                    <h1 style="color: #DC780B;">K-Food Blog</h1>
                   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -194,6 +277,7 @@
                 <div class="navbar-nav">
                   <a class="nav-link" aria-current="page" href="#nav">Home</a>
                   <a class="nav-link" href="#featured">Featured</a>
+                  <a class="nav-link" href="#blog">Blogs</a>
                   <a class="nav-link" href="#about">About</a>
                   <a class="nav-link" href="#utube">Videos</a>
                   <a class="nav-link" href="#faq">Faq</a>
@@ -213,6 +297,27 @@
         <!-- Copyright -->
       
 </footer>
+<div class="popup-banner" style="background-image: url('https://media.tenor.com/WBTSgPd7wQYAAAAC/tacos-taco-day.gif'); height: 300px; width: 300px;" id="popupBanner">
+
+  Call NOW: +49187654654
+
+  <span class="close-btn btn-lg" style="color: red; font-size: 50px;">&times;</span>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var popupBanner = document.getElementById('popupBanner');
+      var closeBtn = document.querySelector('.close-btn');
+
+      closeBtn.addEventListener('click', function() {
+          popupBanner.style.display = 'none';
+      });
+
+      // Show the popup banner
+      popupBanner.style.display = 'block';
+  });
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
