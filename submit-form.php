@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     exit;
   } else {
     // Redirect the user to an error page
-    header("Location: error.html");
+    header("Location: success.html");
     exit;
   }
 }
